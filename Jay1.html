@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Please Unblock Me 💔</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #111;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 30px;
+      font-size: 3em;
+      color: #ff4c4c;
+    }
+
+    img {
+      width: 200px;
+      border-radius: 50%;
+      margin-top: 20px;
+      box-shadow: 0 0 20px rgba(255, 76, 76, 0.6);
+    }
+
+    p {
+      max-width: 600px;
+      margin: 20px auto;
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #f1f1f1;
+    }
+
+    .heart {
+      position: fixed;
+      top: -50px;
+      color: #ff4c4c;
+      font-size: 24px;
+      animation: fall 5s linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Please Unblock Me... I MISS YOU 💔</h1>
+  <img src="Sad.jpeg" alt="Sad face" />
+  <p>
+    first of all lemme start by saying am sorry for streaking another girl…..I promise it meant nth but now since am blocked I came to a realization that there no Josh without ***** and I miss u frl and can’t sleep if ion text you soo can u please just unblock me.
+XOXO 
+I LOVEE YOU 🫶🏽
+ 💔
+  </p>
+
+  <script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.textContent = '💔';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 5000);
+    }
+
+    setInterval(createHeart, 300);
+  </script>
+</body>
+</html>
